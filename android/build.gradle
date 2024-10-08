@@ -1,0 +1,17 @@
+android {
+    compileSdkVersion 33  // Use the latest version available
+
+    defaultConfig {
+        applicationId "com.example.karrot_app"  // Replace with your app's package name
+        minSdkVersion 21  // Or the minimum version you want to support
+        targetSdkVersion 33  // Use the latest version available
+        versionCode 1
+        versionName "1.0.0"
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.debug  // For testing. For production, set up a release signing configuration.
+        }
+    }
+}
